@@ -1,6 +1,7 @@
 #pragma once
 #include "SDL.h"
 #include <iostream>
+#include "SDL_image.h"
 
 
 class Game
@@ -13,7 +14,7 @@ public:
 
 	void init(const char* title, int xpos, int ypos, int widht, int height, bool fullscreen);
 	void handleEvent();
-	void update();
+	void update(double deltaTime);
 	void render();
 	void clean();
 
